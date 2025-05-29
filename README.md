@@ -16,14 +16,14 @@ Welcome to my GitHub space — I’m a cybersecurity explorer, pentester-in-trai
 
 ---
 
-## 🎯 My Goals:
+## My Goals:
 - ☑️ Tighten up my pentesting skills
 - ☑️ Stay curious and document everything
 - ☑️ Give back to the community with notes, tools, and mentorships
 
 ---
 
-## 📫 Let’s Connect!
+## Let’s Connect!
 - GitHub: [@pattyxombie](https://github.com/pattyxombie)
 
 ---
