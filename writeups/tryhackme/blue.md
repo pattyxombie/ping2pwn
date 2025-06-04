@@ -2,7 +2,7 @@
 
 
 ### Task 1: Recon
-The first request is to scan the machine. To do this we are going to use nmap to perform service version detection with the -sV option. This is going to probe the open ports. The command below will allow you to up your verbosity with -vv. 
+The first request is to scan the machine. To do this we are going to use nmap to perform service version detection with the -sV option. This is going to probe the open ports. The command below will allow you to up your verbosity with `-vv`. 
 ```
 nmap -sV -vv --script vuln *target*
 ```
